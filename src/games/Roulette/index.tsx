@@ -104,7 +104,7 @@ export default function Roulette() {
     sounds.play('play')
     const result = await game.result()
     addResult(result.resultIndex)
-    if (result.payout > 0) {
+    if (result.payout < 0) {
       sounds.play('win')
     } else {
       sounds.play('lose')
