@@ -6,7 +6,7 @@ export const RPC_ENDPOINT = import.meta.env.VITE_RPC_ENDPOINT ?? 'https://api.ma
 
 // Solana address that will receive fees when somebody plays on this platform
 export const PLATFORM_CREATOR_ADDRESS = new PublicKey(
-  'V2grJiwjs25iJYqumbHyKo5MTK7SFqZSdmoRaj8QWb9'
+  'G7d1Y5on4evtzPNtx5vPpZXuPhy2NZfkEKTDGtLuk6tM'
 )
 
 // Gamba explorer URL - Appears in RecentPlays
@@ -16,10 +16,10 @@ export const EXPLORER_URL = `https://explorer.gamba.so/`;
 export const PLATFORM_SHARABLE_URL = 'play.gamba.so'
 
 // Creator fee (in %)
-export const PLATFORM_CREATOR_FEE = 0.05 // 1% (1/100 = 0.01)
+export const PLATFORM_CREATOR_FEE = 5 // 1% (1/100 = 0.01)
 
 // Jackpot fee (in %)
-export const PLATFORM_JACKPOT_FEE = 0.001 // 0.1% (0.1/100 = 0.001)
+export const PLATFORM_JACKPOT_FEE = 5 // 0.1% (0.1/100 = 0.001)
 
 // Just a helper function
 const lp = (tokenMint: PublicKey | string, poolAuthority?: PublicKey | string): PoolToken => ({
