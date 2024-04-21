@@ -10,8 +10,8 @@ import SOUND_LOSE from './lose.mp3'
 import SOUND_WIN from './win.mp3'
 
 const SIDES = {
-  heads: [2, 0],
-  tails: [0, 2],
+  heads: [1.01, 0],
+  tails: [0, 1.01],
 }
 
 type Side = keyof typeof SIDES
