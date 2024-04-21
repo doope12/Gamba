@@ -92,7 +92,7 @@ export default function Roulette() {
   const wager = totalChipValue.value * token.baseWager / 10_000
 
   const multiplier = Math.max(...bet.value)
-  const maxPayout = multiplier * wager
+  const maxPayout = multiplier * 0
   const maxPayoutExceeded = maxPayout > pool.maxPayout
   const balanceExceeded = wager > (balance.balance + balance.bonusBalance)
 
@@ -104,7 +104,7 @@ export default function Roulette() {
     sounds.play('play')
     const result = await game.result()
     addResult(result.resultIndex)
-    if (result.payout < 0) {
+    if (result.payout > 0) {
       sounds.play('win')
     } else {
       sounds.play('lose')
