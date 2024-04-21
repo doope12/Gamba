@@ -112,10 +112,10 @@ export function WelcomeBanner() {
         <button onClick={() => window.open(EXPLORER_URL, '_blank')}>
           
         </button>
-        <button onClick={() => window.open('', '_blank')}>
+        <button onClick={() => window.open('asdasd', '_blank')}>
           
         </button>
-        <button onClick={() => window.open('', '_blank')}>
+        <button onClick={() => window.open('asdasd', '_blank')}>
           
         </button>
       </Buttons>
