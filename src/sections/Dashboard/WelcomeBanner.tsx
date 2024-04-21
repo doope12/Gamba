@@ -99,4 +99,26 @@ const Welcome = styled.div`
   }
 `
 
-
+export function WelcomeBanner() {
+  return (
+    <Welcome>
+      <div>
+        <h1>Welcome to D!CK  👋</h1>
+        <p>
+          A fair, simple and decentralized casino on Solana.
+        </p>
+      </div>
+      <Buttons>
+        <button onClick={() => window.open(EXPLORER_URL, '_blank')}>
+          
+        </button>
+        <button onClick={() => window.open('', '_blank')}>
+          
+        </button>
+        <button onClick={() => window.open('', '_blank')}>
+          
+        </button>
+      </Buttons>
+    </Welcome>
+  )
+}
